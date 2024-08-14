@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --padding: 20px;
+    --margin: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+header, footer {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main {
+    padding: var(--padding);
+}
+
+.signup-section {
+    padding: var(--padding);
+    background-color: white;
+    margin: var(--margin) auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.horizontal-align {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin);
+}
+
+.facebook-login {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-category-section {
+    padding: var(--padding);
+    background-color: white;
+    margin: var(--margin) auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.category-item {
+    text-align: center;
+    margin: var(--margin);
+    transition: transform 0.3s;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.category-button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: var(--margin);
+}
+
+.progress-bar-section {
+    padding: var(--padding);
+    background-color: white;
+    margin: var(--margin) auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: var(--margin);
+}
+
+.progress {
+    background-color: var(--secondary-color);
+    height: 100%;
+}
+
+.payment-options-section {
+    padding: var(--padding);
+    background-color: white;
+    margin: var(--margin) auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--margin);
+}
+
+.payment-options button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.payment-options button img {
+    width: 20px;
+    height: 20px;
+}
+
+.order-selection-section {
+    padding: var(--padding);
+    background-color: white;
+    margin: var(--margin) auto;
+    max-width: 600px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
